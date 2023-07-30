@@ -1,13 +1,12 @@
 //This is the child class(Regular)
 public class Regular extends Student{
     //Instance variable: start
-    private int numOfModules,numOfCreditHours;
-    private double daysPresent;
+    private int numOfModules,numOfCreditHours, daysPresent;
     private boolean isGrantedScholarship;
     //Instance variable: end
 
     //Parametrized constructor of the child class(Regular)
-    public Regular(int enrollmentID, String dateOfBirth, String courseName, String studentName, String dateOfEnrollment, int courseDuration, int tuitionFee, int numOfModules, int numOfCreditHours, double daysPresent){
+    public Regular(String studentName,String dateOfBirth,int courseDuration,int tuitionFee,int enrollmentID,String dateOfEnrollment,String courseName,int numOfModules, int numOfCreditHours, int daysPresent){
         super(dateOfBirth, studentName, courseDuration, tuitionFee);
         setEnrollmentID(enrollmentID);
         setCourseName(courseName);
@@ -29,9 +28,7 @@ public class Regular extends Student{
     }
 
     //Accessor method for the private instance variable(daysPresent)
-    public double getDaysPresent(){
-        return daysPresent;
-    }
+    public int getDaysPresent(){ return daysPresent; }
 
     //Accessor method for the private instance variable(isGrantedScholarship)
     public boolean getIsGrantedScholarship(){
@@ -39,7 +36,7 @@ public class Regular extends Student{
     }
 
     //This method return a value after doing a certain calculation
-    public String presentPercentage(double daysPresent){
+    public String presentPercentage(int daysPresent){
         double courseDurationInDays = getCourseDuration() * 30;
         isGrantedScholarship = false;
         if(daysPresent<=courseDurationInDays){

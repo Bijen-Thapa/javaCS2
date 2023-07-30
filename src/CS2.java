@@ -273,7 +273,7 @@ public class CS2 {
 
     public static void main(String[] args) {
         CS2 obj = new CS2();
-        obj.initiate();
+        obj.studentLogin();
 
     }
 }

@@ -6,7 +6,7 @@ public class Student{
     //Instance variable: end
 
     //This is the parameterized constructor of the class
-    public Student(String dateOfBirth, String studentName, int courseDuration, int tuitionFee){
+    public Student(String studentName, String dateOfBirth, int courseDuration, int tuitionFee){
         courseName = "";
         dateOfEnrollment = "";
         enrollmentID = 0;
