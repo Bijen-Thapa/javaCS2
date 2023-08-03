@@ -393,8 +393,9 @@ public class CS2a {
                     JOptionPane.showMessageDialog(mainF,"Fill in all the form to proceed!");          // if any of the textField are empty
                 }else {
                     enrollmentID++;
-//                    studentDetails.add(new Student();
-                    studentDetails.add(new Regular(dobTF.getText(), nameTF.getText(), Integer.parseInt(courseDTF.getText()), Integer.parseInt(feeTF.getText()), 0,"", "", 0,0, 0));
+                    studentDetails.add(new Student(nameTF.getText(), dobTF.getText(), Integer.parseInt(courseDTF.getText()), Integer.parseInt(feeTF.getText())));
+//                    studentDetails.add(new Regular(, 0,"", "", 0,0, 0));
+                    studentDetails.get(0).display();
                     JOptionPane.showMessageDialog(mainF, "Registered successfully!");
                     mainF.remove(mainP);
                     home();

@@ -6,10 +6,10 @@ public class Regular extends Student{
     //Instance variable: end
 
     //Parametrized constructor of the child class(Regular)
-    public Regular(String studentName,String dateOfBirth,int courseDuration,int tuitionFee,int enrollmentID,String dateOfEnrollment,String courseName,int numOfModules, int numOfCreditHours, int daysPresent){
-        super(dateOfBirth, studentName, courseDuration, tuitionFee);
+    public Regular(String studentName,String dateOfBirth,int courseDuration,int tuitionFee,int enrollmentID,String dateOfEnrollment,String courseName, int numOfModules, int numOfCreditHours, int daysPresent){
+        super(studentName, dateOfBirth, courseDuration, tuitionFee);
         setEnrollmentID(enrollmentID);
-        setCourseName(courseName);
+        setCourseName(courseName); ;
         setDateOfEnrollment(dateOfEnrollment);
         this.numOfModules = numOfModules;
         this.numOfCreditHours = numOfCreditHours;

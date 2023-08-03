@@ -7,8 +7,8 @@ public class Dropout extends Student{
     //Instance variable: end
 
     //Parameterized constructor of the Regular class  
-    public Dropout(String dateOfBirth, String studentName, int courseDuration, int tuitionFee, int numOfRemainingModules, int numOfMonthsAttended, String dateOfDropout, int enrollmentID, String courseName, String dateOfEnrollment){
-        super(dateOfBirth, studentName, courseDuration, tuitionFee);       
+    public Dropout(String studentName, String dateOfBirth, int courseDuration, int tuitionFee, int enrollmentID, String dateOfEnrollment, String courseName, int numOfRemainingModules, int numOfMonthsAttended, String dateOfDropout){
+        super(studentName, dateOfBirth, courseDuration, tuitionFee);
         setEnrollmentID(enrollmentID);
         setCourseName(courseName);
         setDateOfEnrollment(dateOfEnrollment);

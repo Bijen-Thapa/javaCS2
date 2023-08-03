@@ -79,19 +79,19 @@ public class CS2 {
                 feeP.add(feeTF, g);
                 conP.add(feeP, g);
 
-                button.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        if(nameTF.getText().equals("") || dobTF.getText().equals("") || durationTF.getText().equals("") || feeTF.getText().equals("")){
-
-                        }else {
-                            JOptionPane.showMessageDialog(mainF,"The actual program is now initiating!!!");
-                            mainF.remove(conP);
-                            first1();
-                        }
-
-                    }
-                });
+//                button.addActionListener(new ActionListener() {
+//                    @Override
+//                    public void actionPerformed(ActionEvent e) {
+//                        if(nameTF.getText().equals("") || durationTF.getText().equals("") || feeTF.getText().equals("")){
+//
+//                        }else {
+//                            JOptionPane.showMessageDialog(mainF,"The actual program is now initiating!!!");
+//                            mainF.remove(conP);
+//                            first1();
+//                        }
+//
+//                    }
+//                });
 
                 buttonP.add(button);
                 g.gridy--;
